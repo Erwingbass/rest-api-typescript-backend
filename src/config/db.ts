@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config(); // Carga los datos de .env
 
-const db = new Sequelize(process.env.DATABASE_URL, {
+const db = new Sequelize(process.env.DATABASE_URL as string, {
   dialect: 'postgres',
   protocol: 'postgres',
   logging: false,

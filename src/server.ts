@@ -1,12 +1,12 @@
 import express from 'express';
 import colors from 'colors';
 import db from './config/db.js';
-import './models/Product'; // Importar para que se ejecute Product.init()
+import './models/Product.js'; // Importar para que se ejecute Product.init()
 import router from './router.js';
 import swaggerUi from 'swagger-ui-express';
 import swaggerSpec, { swaggerUiOptions } from './config/swagger.js';
 import { globalErrorHandler } from './middlewares/errorHandler.js';
-import cors, { CorsOptions } from 'cors';
+import cors, { type CorsOptions } from 'cors';
 
 export async function connectDB() {
   try {

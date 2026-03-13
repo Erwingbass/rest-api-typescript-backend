@@ -6,13 +6,14 @@
     "target": "esnext",
     "moduleResolution": "nodenext",
     "module": "nodenext",
-    "strict": false,
+    "strict": true,
     "sourceMap": true,
     "esModuleInterop": true,
     "declaration": true, // Type Definition Files
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "verbatimModuleSyntax": true // Avisar cuando falten extensiones
   },
-  "include": ["src/**/*.ts", "src/models/Product.ts"],
+  "include": ["src/**/*.ts"],
   "exclude": ["src/**/*.test.ts"]
 }

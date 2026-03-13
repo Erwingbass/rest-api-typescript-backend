@@ -1,5 +1,5 @@
 import swaggerJSDoc from 'swagger-jsdoc';
-import { SwaggerUiOptions } from 'swagger-ui-express';
+import type { SwaggerUiOptions } from 'swagger-ui-express';
 
 const options: swaggerJSDoc.Options = {
   swaggerDefinition: {
