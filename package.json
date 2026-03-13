@@ -1,0 +1,40 @@
+{
+  "name": "rest-api-node-ts-server",
+  "version": "1.0.0",
+  "description": "REST API con Express y TypeScript",
+  "license": "ISC",
+  "author": "Erwing Gonzalez",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "pretest": "tsx src/data/index.ts --clear"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@vitest/coverage-v8": "^4.0.18",
+    "supertest": "^7.2.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "@types/supertest": "^7.2.0",
+    "colors": "^1.4.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "pg": "^8.18.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
